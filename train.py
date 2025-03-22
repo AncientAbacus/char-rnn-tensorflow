@@ -7,6 +7,9 @@ import time
 import os
 from six.moves import cPickle
 
+import tensorflow as tf
+tf.compat.v1.disable_eager_execution()
+
 
 parser = argparse.ArgumentParser(
                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
